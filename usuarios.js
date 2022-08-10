@@ -1,30 +1,6 @@
 require("dotenv").config();
 
-//////Zona de funciones//////
-/*const registroUser=async function (puesto1) {
-    
-    
-            
-                if(puesto1=="admin" || puesto1=="supervisor"){
-                    if(puesto1!="admin"){
-                await Usuario.create({
-                    nombre:"empleado1",
-                    apellido:"apellido1",
-                    puesto:"supervisor",
-                    correo:"supervisor@ejemplo.com",
-                    pass:"12345"
-                });
 
-            }
-
-                return "Registrado";
-        
-            } else {
-                return "error";
-            }
-        }
-    
-  */
  const registroUser=function (puesto1){
               const registro= async function(){
                await  Usuario.create({
