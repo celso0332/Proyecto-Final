@@ -6,7 +6,7 @@ const {Schema} = mongoose;
 const SchemaInventario=new mongoose.Schema({
     numero:String,
     supervisor:String,
-    listaLibros:[Libro]
+    listaLibros:[String]
 })
 
 module.exports = mongoose.model('Inventario',SchemaInventario,'inventarios');
